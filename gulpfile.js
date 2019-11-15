@@ -14,10 +14,10 @@ var gulp = require('gulp'),
 var path = {
     build: {
         html: 'build/',
-        js: 'build/js/',
-        css: 'build/styles/',
-        img: 'build/img/',
-        fonts: 'build/fonts/',
+        js: 'build/src/js/',
+        css: 'build/src/styles/',
+        img: 'build/src/img/',
+        fonts: 'build/src/fonts/',
         globalCss: 'build/'
     },
     src: {

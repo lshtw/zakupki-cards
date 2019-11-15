@@ -48,11 +48,12 @@ body {
 .table {
   border-collapse: collapse;
   width: 100%;
+  border: 1px solid #E4E7F2;
   &__row {
       display: flex;
     justify-content: space-between;
     &-item {
-      margin-right: 40px;
+      //margin-right: 40px;
       &:last-of-type {
         margin-right: 0;
       }
@@ -126,5 +127,10 @@ body {
 
 .thin-td {
   max-width: 90px;
+  width: 100%;
+}
+
+.chevron-td {
+  max-width: 44px;
   width: 100%;
 }
