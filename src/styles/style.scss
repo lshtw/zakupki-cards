@@ -50,10 +50,9 @@ body {
   width: 100%;
   border: 1px solid #E4E7F2;
   &__row {
-      display: flex;
-    justify-content: space-between;
+
     &-item {
-      //margin-right: 40px;
+      padding: 16px 8px 16px 16px;
       &:last-of-type {
         margin-right: 0;
       }
@@ -133,4 +132,35 @@ body {
 .chevron-td {
   max-width: 44px;
   width: 100%;
+}
+
+.paginator-block {
+  padding: 24px 0 40px;
+
+  &__ellipsis {
+    width: 40px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    color: #334059;
+    margin-right: 8px;
+  }
+
+  &__select {
+    width: 88px;
+  }
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+.mr56 {
+  margin-right: 56px;
 }
