@@ -8,10 +8,11 @@ body {
   background-color: #E5E5E5;
 }
 .padd {
+  display: table-cell;
   padding-right: 18px;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -29,6 +30,7 @@ p {
   font-weight: normal;
   font-size: 26px;
   color: #334059;
+  padding: 40px 0 32px;
 }
 
 .normal-text {
@@ -46,10 +48,18 @@ p {
   font-weight: normal;
   font-size: 10px;
   line-height: 16px;
-    letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 
   color: #909EBB;
+}
+
+.base-blue-text {
+  color: #0065DD;
+}
+
+.error-text {
+  color: #E9564A;
 }
 
 .table {
@@ -63,7 +73,7 @@ p {
 
     &-item {
       padding: 16px 0;
-      vertical-align: middle;
+      vertical-align: baseline;
 
       &:last-of-type {
         padding-right: 0;
@@ -88,6 +98,14 @@ p {
         }
       }
 
+    }
+  }
+
+  &-icon {
+    margin-right: 28px;
+    cursor: pointer;
+    &:last-of-type {
+      margin-right: 0;
     }
   }
 }
@@ -127,8 +145,7 @@ p {
 }
 
 .small-td {
-  max-width: 140px;
-  width: 100%;
+  width: 138px;
 }
 
 .short-td {
@@ -182,9 +199,23 @@ p {
   }
 }
 
-.mr40 {
-  margin-right: 40px;
+
+.customer-planning-contract {
+  margin-bottom: 24px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
-.mr56 {
-  margin-right: 56px;
+
+.show-all-customers {
+  display: inline-block;
+  margin: 8px 0 2px;
+  cursor: pointer;
+}
+
+.status-text {
+  margin-bottom: 4px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
