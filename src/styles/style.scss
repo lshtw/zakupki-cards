@@ -7,6 +7,13 @@
 body {
   background-color: #E5E5E5;
 }
+.padd {
+  padding-right: 18px;
+}
+
+p {
+  margin: 0;
+}
 
 .container {
   width: 100%;
@@ -48,16 +55,7 @@ body {
 .table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #E4E7F2;
-  &__row {
 
-    &-item {
-      padding: 16px 8px 16px 16px;
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
-  }
   &__header {
     border-top: 1px solid #E4E7F2;
     border-bottom: 1px solid #E4E7F2;
@@ -65,6 +63,31 @@ body {
 
     &-item {
       padding: 16px 0;
+      vertical-align: middle;
+
+      &:last-of-type {
+        padding-right: 0;
+        & .padd {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &__row {
+
+    &-item {
+      padding: 16px 8px 16px 16px;
+      padding: 16px 34px 16px 0;
+      border-bottom: 1px solid #E4E7F2;
+      vertical-align: baseline;
+      &:last-of-type {
+       padding-right: 0;
+        & .padd {
+          padding-right: 0;
+        }
+      }
+
     }
   }
 }
@@ -75,8 +98,7 @@ body {
 }
 
 .bid-td {
-  max-width: 240px;
-  width: 100%;
+  width: 240px;
 }
 
 .large-td {
@@ -131,7 +153,9 @@ body {
 
 .chevron-td {
   max-width: 44px;
-  width: 100%;
+  width: 44px;
+  text-align: center;
+  vertical-align: baseline;
 }
 
 .paginator-block {
