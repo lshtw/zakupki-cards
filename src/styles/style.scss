@@ -8,7 +8,6 @@ body {
   background-color: #E5E5E5;
 }
 .padd {
-  display: table-cell;
   padding-right: 18px;
 }
 
@@ -87,8 +86,8 @@ p, h1, h2, h3, h4, h5, h6 {
   &__row {
 
     &-item {
-      padding: 16px 8px 16px 16px;
-      padding: 16px 34px 16px 0;
+      //padding: 16px 8px 16px 16px;
+      //padding: 16px 34px 16px 0;
       border-bottom: 1px solid #E4E7F2;
       vertical-align: baseline;
       &:last-of-type {
@@ -218,4 +217,8 @@ p, h1, h2, h3, h4, h5, h6 {
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.pl-16 {
+  padding-left: 16px;
 }
